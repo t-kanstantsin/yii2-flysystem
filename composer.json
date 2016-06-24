@@ -27,7 +27,7 @@
     ],
     "replace": {
         "creocoder/yii2-flysystem":"*"
-    }
+    },
     "require": {
         "yiisoft/yii2": "~2.0.0",
         "league/flysystem": "~1.0"
