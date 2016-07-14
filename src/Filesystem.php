@@ -122,12 +122,12 @@ abstract class Filesystem extends Component
             $adapter = new ReplicateAdapter($adapter, $filesystem->getAdapter());
         }
 
+        $this->filesystem = new NativeFilesystem($adapter, $this->config);
+
         // plugins
         foreach ($this->pluginArray as $pluginClass) {
             $this->filesystem->addPlugin(new $pluginClass);
         }
-
-        $this->filesystem = new NativeFilesystem($adapter, $this->config);
     }
 
     /**
