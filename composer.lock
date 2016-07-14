@@ -4,40 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9792244f513efd8af343d363ed0c85ee",
+    "hash": "84e673bde33415d3a607044388e8d0ab",
+    "content-hash": "92bf96ef714a90f4b8dc2d434c5f6aa6",
     "packages": [
         {
             "name": "bower-asset/jquery",
-            "version": "2.1.4",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery.git",
-                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85"
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery/zipball/7751e69b615c6eca6f783a81e292a55725af6b85",
-                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "shasum": ""
-            },
-            "require-dev": {
-                "bower-asset/qunit": "1.14.0",
-                "bower-asset/requirejs": "2.1.10",
-                "bower-asset/sinon": "1.8.1",
-                "bower-asset/sizzle": "2.1.1-patch2"
             },
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": "dist/jquery.js",
                 "bower-asset-ignore": [
-                    "**/.*",
-                    "build",
-                    "dist/cdn",
-                    "speed",
-                    "test",
-                    "*.md",
-                    "AUTHORS.txt",
-                    "Gruntfile.js",
                     "package.json"
                 ]
             },
@@ -45,6 +32,7 @@
                 "MIT"
             ],
             "keywords": [
+                "browser",
                 "javascript",
                 "jquery",
                 "library"
@@ -52,16 +40,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.63",
+            "version": "3.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "c40c7287eadc31e341ebbf0c02352eb55b9cbc48"
+                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/c40c7287eadc31e341ebbf0c02352eb55b9cbc48",
-                "reference": "c40c7287eadc31e341ebbf0c02352eb55b9cbc48",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/5a72c563b502b8e05958a524cdfffafe9987be38",
+                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38",
                 "shasum": ""
             },
             "require": {
@@ -70,23 +58,17 @@
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "./dist/inputmask/jquery.inputmask.js",
-                    "./dist/inputmask/jquery.inputmask.extensions.js",
-                    "./dist/inputmask/jquery.inputmask.date.extensions.js",
-                    "./dist/inputmask/jquery.inputmask.numeric.extensions.js",
-                    "./dist/inputmask/jquery.inputmask.phone.extensions.js",
-                    "./dist/inputmask/jquery.inputmask.regex.extensions.js"
+                    "./dist/inputmask/inputmask.js"
                 ],
                 "bower-asset-ignore": [
-                    "**/.*",
-                    "qunit/",
-                    "nuget/",
-                    "tools/",
-                    "js/",
-                    "*.md",
-                    "build.properties",
-                    "build.xml",
-                    "jquery.inputmask.jquery.json"
+                    "**/*",
+                    "!dist/*",
+                    "!dist/inputmask/*",
+                    "!dist/min/*",
+                    "!dist/min/inputmask/*",
+                    "!extra/bindings/*",
+                    "!extra/dependencyLibs/*",
+                    "!extra/phone-codes/*"
                 ]
             },
             "license": [
@@ -132,16 +114,16 @@
         },
         {
             "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.4",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0"
+                "reference": "60728da6ade5879e807a49ce59ef9a72039b8978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/3f20897307cca046fca5323b318475ae9dac0ca0",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/60728da6ade5879e807a49ce59ef9a72039b8978",
+                "reference": "60728da6ade5879e807a49ce59ef9a72039b8978",
                 "shasum": ""
             },
             "require": {
@@ -154,6 +136,7 @@
                     ".travis.yml",
                     "Gemfile",
                     "Gemfile.lock",
+                    "CONTRIBUTING.md",
                     "vendor/",
                     "script/",
                     "test/"
@@ -225,16 +208,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.6.0",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd"
+                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6f389f0f25b90d0b495308efcfa073981177f0fd",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/ae1828d955112356f7677c465f94f7deb7d27a40",
+                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40",
                 "shasum": ""
             },
             "require": {
@@ -265,34 +248,33 @@
             "keywords": [
                 "html"
             ],
-            "time": "2013-11-30 08:25:19"
+            "time": "2015-08-05 01:03:42"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.3",
+            "version": "1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "3c2400a99ccc3be6884d40361890010449c6b447"
+                "reference": "9aca859a303fdca30370f42b8c611d9cf0dedf4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3c2400a99ccc3be6884d40361890010449c6b447",
-                "reference": "3c2400a99ccc3be6884d40361890010449c6b447",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9aca859a303fdca30370f42b8c611d9cf0dedf4b",
+                "reference": "9aca859a303fdca30370f42b8c611d9cf0dedf4b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
             },
+            "conflict": {
+                "league/flysystem-sftp": "<1.0.6"
+            },
             "require-dev": {
                 "ext-fileinfo": "*",
-                "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "~2.0",
-                "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.1",
-                "predis/predis": "~1.0",
-                "tedivm/stash": "~0.12.0"
+                "phpspec/phpspec": "^2.2",
+                "phpunit/phpunit": "~4.8 || ~5.0"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -306,8 +288,7 @@
                 "league/flysystem-rackspace": "Allows you to use Rackspace Cloud Files",
                 "league/flysystem-sftp": "Allows you to use SFTP server storage via phpseclib",
                 "league/flysystem-webdav": "Allows you to use WebDAV storage",
-                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter",
-                "predis/predis": "Allows you to use Predis for caching"
+                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter"
             },
             "type": "library",
             "extra": {
@@ -330,10 +311,11 @@
                     "email": "info@frenky.net"
                 }
             ],
-            "description": "Many filesystems, one API.",
+            "description": "Filesystem abstraction: Many filesystems, one API.",
             "keywords": [
                 "Cloud Files",
                 "WebDAV",
+                "abstraction",
                 "aws",
                 "cloud",
                 "copy.com",
@@ -341,6 +323,7 @@
                 "file systems",
                 "files",
                 "filesystem",
+                "filesystems",
                 "ftp",
                 "rackspace",
                 "remote",
@@ -348,33 +331,34 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-03-29 14:01:43"
+            "time": "2016-06-03 19:11:39"
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.4",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "726867caee3f23aa7a6975c801e64b6021e14f86"
+                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/726867caee3f23aa7a6975c801e64b6021e14f86",
-                "reference": "726867caee3f23aa7a6975c801e64b6021e14f86",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2b75151ea60e1fd820046416eee2e89c3dda1133",
+                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/jquery": "2.1.*@stable | 1.11.*@stable",
-                "bower-asset/jquery.inputmask": "3.1.*",
+                "bower-asset/jquery": "2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery.inputmask": "~3.2.2",
                 "bower-asset/punycode": "1.3.*",
-                "bower-asset/yii2-pjax": ">=2.0.1",
+                "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
+                "ext-ctype": "*",
                 "ext-mbstring": "*",
-                "ezyang/htmlpurifier": "4.6.*",
+                "ezyang/htmlpurifier": "~4.6",
                 "lib-pcre": "*",
                 "php": ">=5.4.0",
-                "yiisoft/yii2-composer": "*"
+                "yiisoft/yii2-composer": "~2.0.4"
             },
             "bin": [
                 "yii"
@@ -428,6 +412,11 @@
                     "name": "Paul Klimov",
                     "email": "klimov.paul@gmail.com",
                     "role": "Core framework development"
+                },
+                {
+                    "name": "Dmitry Naumenko",
+                    "email": "d.naumenko.a@gmail.com",
+                    "role": "Core framework development"
                 }
             ],
             "description": "Yii PHP Framework Version 2",
@@ -436,24 +425,24 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-05-10 20:09:47"
+            "time": "2016-07-11 13:36:42"
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "ca8d23707ae47d20b0454e4b135c156f6da6d7be"
+                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/ca8d23707ae47d20b0454e4b135c156f6da6d7be",
-                "reference": "ca8d23707ae47d20b0454e4b135c156f6da6d7be",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/7452fd908a5023b8bb5ea1b123a174ca080de464",
+                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -483,22 +472,22 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2015-03-01 06:22:44"
+            "time": "2016-02-06 00:49:24"
         }
     ],
     "packages-dev": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.8.3",
+            "version": "2.8.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "85c5224582acf507afad232da20a7ef0b2ec0073"
+                "reference": "2d7183cd22381237bce25f11d741a77bdeb2d0b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/85c5224582acf507afad232da20a7ef0b2ec0073",
-                "reference": "85c5224582acf507afad232da20a7ef0b2ec0073",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2d7183cd22381237bce25f11d741a77bdeb2d0b8",
+                "reference": "2d7183cd22381237bce25f11d741a77bdeb2d0b8",
                 "shasum": ""
             },
             "require": {
@@ -510,6 +499,7 @@
                 "ext-openssl": "*",
                 "monolog/monolog": "~1.4",
                 "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit-mock-objects": "2.3.1",
                 "symfony/yaml": "~2.1"
             },
             "suggest": {
@@ -520,11 +510,6 @@
                 "symfony/yaml": "Eases the ability to write manifests for creating jobs in AWS Import/Export"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Aws": "src/"
@@ -552,20 +537,20 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-05-07 21:02:23"
+            "time": "2016-05-03 17:42:24"
         },
         {
             "name": "barracuda/copy",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/copy-app/php-client-library.git",
-                "reference": "ef60bee6a57ad171258391f981dbd395ececa3e0"
+                "reference": "83d8b7e93b3cdc6c6a978f1d88d26b31eac4a255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/copy-app/php-client-library/zipball/ef60bee6a57ad171258391f981dbd395ececa3e0",
-                "reference": "ef60bee6a57ad171258391f981dbd395ececa3e0",
+                "url": "https://api.github.com/repos/copy-app/php-client-library/zipball/83d8b7e93b3cdc6c6a978f1d88d26b31eac4a255",
+                "reference": "83d8b7e93b3cdc6c6a978f1d88d26b31eac4a255",
                 "shasum": ""
             },
             "require": {
@@ -594,20 +579,21 @@
             "keywords": [
                 "copy"
             ],
-            "time": "2015-03-07 14:30:23"
+            "abandoned": true,
+            "time": "2015-05-27 21:28:58"
         },
         {
             "name": "dropbox/dropbox-sdk",
-            "version": "v1.1.5",
+            "version": "v1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dropbox/dropbox-sdk-php.git",
-                "reference": "138bfec02f042fa6a4b384c0ae7ebe92ad122bbd"
+                "reference": "6901f8122458e0ce7e391468c0cf6cca465bd0ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dropbox/dropbox-sdk-php/zipball/138bfec02f042fa6a4b384c0ae7ebe92ad122bbd",
-                "reference": "138bfec02f042fa6a4b384c0ae7ebe92ad122bbd",
+                "url": "https://api.github.com/repos/dropbox/dropbox-sdk-php/zipball/6901f8122458e0ce7e391468c0cf6cca465bd0ee",
+                "reference": "6901f8122458e0ce7e391468c0cf6cca465bd0ee",
                 "shasum": ""
             },
             "require": {
@@ -633,7 +619,7 @@
             "keywords": [
                 "dropbox"
             ],
-            "time": "2015-02-23 20:51:29"
+            "time": "2015-06-29 21:47:57"
         },
         {
             "name": "eher/oauth",
@@ -761,20 +747,192 @@
                 "rest",
                 "web service"
             ],
+            "abandoned": "guzzlehttp/guzzle",
             "time": "2015-03-18 18:23:50"
         },
         {
-            "name": "league/flysystem-aws-s3-v2",
-            "version": "1.0.1",
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/flysystem-aws-s3-v2.git",
-                "reference": "dfb35efdbd1261b114d0dcb6785b4d1c05467e0f"
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "d094e337976dff9d8e2424e8485872194e768662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v2/zipball/dfb35efdbd1261b114d0dcb6785b4d1c05467e0f",
-                "reference": "dfb35efdbd1261b114d0dcb6785b4d1c05467e0f",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d094e337976dff9d8e2424e8485872194e768662",
+                "reference": "d094e337976dff9d8e2424e8485872194e768662",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2016-03-21 20:02:09"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/c10d860e2a9595f8883527fa0021c7da9e65f579",
+                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-05-18 16:56:05"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-06-24 23:00:38"
+        },
+        {
+            "name": "league/flysystem-aws-s3-v2",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-aws-s3-v2.git",
+                "reference": "e464a35e34abed572c76b76aa2f278d178e141c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v2/zipball/e464a35e34abed572c76b76aa2f278d178e141c6",
+                "reference": "e464a35e34abed572c76b76aa2f278d178e141c6",
                 "shasum": ""
             },
             "require": {
@@ -808,29 +966,26 @@
                 }
             ],
             "description": "Flysystem adapter for AWS S3 SDK v2",
-            "time": "2015-02-10 13:16:47"
+            "time": "2015-10-15 15:55:48"
         },
         {
             "name": "league/flysystem-azure",
-            "version": "1.0.1",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-azure.git",
-                "reference": "90ee5c9f5b3ce65926f3ff00f4870b04ae6ec9b4"
+                "reference": "0b9838c4f75ee41bc390357b0350e9a62e3b3a1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-azure/zipball/90ee5c9f5b3ce65926f3ff00f4870b04ae6ec9b4",
-                "reference": "90ee5c9f5b3ce65926f3ff00f4870b04ae6ec9b4",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-azure/zipball/0b9838c4f75ee41bc390357b0350e9a62e3b3a1f",
+                "reference": "0b9838c4f75ee41bc390357b0350e9a62e3b3a1f",
                 "shasum": ""
             },
             "require": {
                 "league/flysystem": "~1.0",
-                "microsoft/windowsazure": "~0.4.0",
-                "pear-pear.php.net/http_request2": "*",
-                "pear-pear.php.net/mail_mime": "*",
-                "pear-pear.php.net/mail_mimedecode": "*",
-                "php": ">=5.4.0"
+                "microsoft/azure-storage": "~0.10.1",
+                "php": ">=5.5.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -858,24 +1013,25 @@
                 }
             ],
             "description": "Flysystem adapter for Windows Azure",
-            "time": "2015-02-01 09:16:34"
+            "time": "2016-07-10 19:08:39"
         },
         {
             "name": "league/flysystem-cached-adapter",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-cached-adapter.git",
-                "reference": "696697b56f00f8ec003d23810b52ab00e68df575"
+                "reference": "f006cb3c355ae596c72ba8ca4cf3aa4bb545bc0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-cached-adapter/zipball/696697b56f00f8ec003d23810b52ab00e68df575",
-                "reference": "696697b56f00f8ec003d23810b52ab00e68df575",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-cached-adapter/zipball/f006cb3c355ae596c72ba8ca4cf3aa4bb545bc0c",
+                "reference": "f006cb3c355ae596c72ba8ca4cf3aa4bb545bc0c",
                 "shasum": ""
             },
             "require": {
-                "league/flysystem": "~1.0"
+                "league/flysystem": "~1.0",
+                "psr/cache": "1.0.0"
             },
             "require-dev": {
                 "henrikbjorn/phpspec-code-coverage": "~1.0@dev",
@@ -884,6 +1040,9 @@
                 "phpunit/phpunit": "~4.1",
                 "predis/predis": "~1.0",
                 "tedivm/stash": "~0.12"
+            },
+            "suggest": {
+                "ext-phpredis": "Pure C implemented extension for PHP"
             },
             "type": "library",
             "autoload": {
@@ -902,7 +1061,7 @@
                 }
             ],
             "description": "An adapter decorator to enable meta-data caching.",
-            "time": "2015-02-03 08:09:49"
+            "time": "2016-01-25 08:21:11"
         },
         {
             "name": "league/flysystem-copy",
@@ -953,16 +1112,16 @@
         },
         {
             "name": "league/flysystem-dropbox",
-            "version": "1.0.0",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-dropbox.git",
-                "reference": "2f464a6a80c0dcc2113a8cc636ca9d4a0fc26617"
+                "reference": "939f91ca00d0255d9b3aa313e191480d00f09382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-dropbox/zipball/2f464a6a80c0dcc2113a8cc636ca9d4a0fc26617",
-                "reference": "2f464a6a80c0dcc2113a8cc636ca9d4a0fc26617",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-dropbox/zipball/939f91ca00d0255d9b3aa313e191480d00f09382",
+                "reference": "939f91ca00d0255d9b3aa313e191480d00f09382",
                 "shasum": ""
             },
             "require": {
@@ -971,8 +1130,7 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
             "extra": {
@@ -996,7 +1154,7 @@
                 }
             ],
             "description": "Flysystem adapter for Dropbox",
-            "time": "2015-01-21 22:19:57"
+            "time": "2016-04-25 18:51:39"
         },
         {
             "name": "league/flysystem-gridfs",
@@ -1046,22 +1204,22 @@
         },
         {
             "name": "league/flysystem-rackspace",
-            "version": "1.0.1",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-rackspace.git",
-                "reference": "c44e4072cf93c9e1b6ee9a125ad84c827e13adca"
+                "reference": "ba877e837f5dce60e78a0555de37eb9bfc7dd6b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-rackspace/zipball/c44e4072cf93c9e1b6ee9a125ad84c827e13adca",
-                "reference": "c44e4072cf93c9e1b6ee9a125ad84c827e13adca",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-rackspace/zipball/ba877e837f5dce60e78a0555de37eb9bfc7dd6b9",
+                "reference": "ba877e837f5dce60e78a0555de37eb9bfc7dd6b9",
                 "shasum": ""
             },
             "require": {
                 "league/flysystem": "~1.0",
                 "php": ">=5.4.0",
-                "rackspace/php-opencloud": "~1.12"
+                "rackspace/php-opencloud": "~1.16"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
@@ -1089,20 +1247,20 @@
                 }
             ],
             "description": "Flysystem adapter for Rackspace",
-            "time": "2015-04-02 07:47:54"
+            "time": "2016-03-11 12:13:42"
         },
         {
             "name": "league/flysystem-replicate-adapter",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-replicate-adapter.git",
-                "reference": "f1ad22787c527e0d9daee225296fee3a9e3333a1"
+                "reference": "864e80409c0918b0ed6921c3941247017d9db77c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-replicate-adapter/zipball/f1ad22787c527e0d9daee225296fee3a9e3333a1",
-                "reference": "f1ad22787c527e0d9daee225296fee3a9e3333a1",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-replicate-adapter/zipball/864e80409c0918b0ed6921c3941247017d9db77c",
+                "reference": "864e80409c0918b0ed6921c3941247017d9db77c",
                 "shasum": ""
             },
             "require": {
@@ -1135,26 +1293,26 @@
                 }
             ],
             "description": "Flysystem adapter for Replica's",
-            "time": "2015-01-21 22:20:16"
+            "time": "2015-08-18 21:07:17"
         },
         {
             "name": "league/flysystem-sftp",
-            "version": "1.0.4",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-sftp.git",
-                "reference": "c0646ab870843f60bb0af51c9c8055f042e647ee"
+                "reference": "b94194e723df3ed7c8c7939ff83d75f35f58fd2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-sftp/zipball/c0646ab870843f60bb0af51c9c8055f042e647ee",
-                "reference": "c0646ab870843f60bb0af51c9c8055f042e647ee",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-sftp/zipball/b94194e723df3ed7c8c7939ff83d75f35f58fd2a",
+                "reference": "b94194e723df3ed7c8c7939ff83d75f35f58fd2a",
                 "shasum": ""
             },
             "require": {
                 "league/flysystem": "~1.0",
                 "php": ">=5.4.0",
-                "phpseclib/phpseclib": "~0.3.8"
+                "phpseclib/phpseclib": "~2.0"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
@@ -1182,26 +1340,26 @@
                 }
             ],
             "description": "Flysystem adapter for SFTP",
-            "time": "2015-04-16 11:42:20"
+            "time": "2016-07-11 07:30:54"
         },
         {
             "name": "league/flysystem-webdav",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-webdav.git",
-                "reference": "1b82edf84844aa17b60839d1d5bf8ff39099fe2f"
+                "reference": "11dd918610ffa6bcedd7cf41604bacb4cc10e9fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-webdav/zipball/1b82edf84844aa17b60839d1d5bf8ff39099fe2f",
-                "reference": "1b82edf84844aa17b60839d1d5bf8ff39099fe2f",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-webdav/zipball/11dd918610ffa6bcedd7cf41604bacb4cc10e9fc",
+                "reference": "11dd918610ffa6bcedd7cf41604bacb4cc10e9fc",
                 "shasum": ""
             },
             "require": {
                 "league/flysystem": "~1.0",
-                "php": ">=5.4.0",
-                "sabre/dav": "~2.0"
+                "php": ">=5.5.0",
+                "sabre/dav": "~3.1"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -1229,7 +1387,7 @@
                 }
             ],
             "description": "Flysystem adapter for WebDAV",
-            "time": "2015-01-21 22:20:23"
+            "time": "2016-07-11 12:25:25"
         },
         {
             "name": "league/flysystem-ziparchive",
@@ -1278,47 +1436,62 @@
             "time": "2015-04-21 12:14:28"
         },
         {
-            "name": "microsoft/windowsazure",
-            "version": "v0.4.0",
+            "name": "microsoft/azure-storage",
+            "version": "v0.10.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Azure/azure-sdk-for-php.git",
-                "reference": "61d4e12495358491f62cc5bd8716335b0b313488"
+                "url": "https://github.com/Azure/azure-storage-php.git",
+                "reference": "eadb0378df6e649b1e598a7e5b5fd1ae445f11b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Azure/azure-sdk-for-php/zipball/61d4e12495358491f62cc5bd8716335b0b313488",
-                "reference": "61d4e12495358491f62cc5bd8716335b0b313488",
+                "url": "https://api.github.com/repos/Azure/azure-storage-php/zipball/eadb0378df6e649b1e598a7e5b5fd1ae445f11b7",
+                "reference": "eadb0378df6e649b1e598a7e5b5fd1ae445f11b7",
                 "shasum": ""
             },
             "require": {
-                "pear-pear/http_request2": "*",
-                "pear-pear/mail_mime": "*",
-                "pear-pear/mail_mimedecode": "*"
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.6",
+                "pdepend/pdepend": "~2.2",
+                "phploc/phploc": "~2.1",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "~4.0",
+                "sebastian/phpcpd": "~2.0",
+                "squizlabs/php_codesniffer": "2.*",
+                "theseer/phpdox": "~0.8"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.10.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "WindowsAzure\\": ""
+                "psr-4": {
+                    "MicrosoftAzure\\Storage\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Azure PHP SDK",
-                    "email": "azurephpsdk@microsoft.com"
+                    "name": "Azure Storage PHP SDK",
+                    "email": "dmsh@microsoft.com"
                 }
             ],
-            "description": "This project provides a set of PHP client libraries that make it easy to access Windows Azure tables, blobs, queues, service runtime and service management APIs.",
+            "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure storage APIs.",
             "keywords": [
                 "azure",
                 "php",
-                "sdk"
+                "sdk",
+                "storage"
             ],
-            "time": "2014-01-23 05:45:10"
+            "time": "2016-05-12 07:55:05"
         },
         {
             "name": "mikemccabe/json-patch-php",
@@ -1348,330 +1521,44 @@
             "time": "2015-01-05 21:19:54"
         },
         {
-            "name": "pear-pear.php.net/Archive_Tar",
-            "version": "1.3.16",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/Archive_Tar-1.3.16.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">=4.3.0.0"
-            },
-            "replace": {
-                "pear-pear/archive_tar": "== 1.3.16.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "New BSD\n License"
-            ],
-            "description": "This class provides handling of tar files in PHP.\nIt supports creating, listing, extracting and adding to tar files.\nGzip support is available if PHP has the zlib extension built-in or\nloaded. Bz2 compression is also supported with the bz2 extension loaded."
-        },
-        {
-            "name": "pear-pear.php.net/Console_Getopt",
-            "version": "1.4.0",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/Console_Getopt-1.4.0.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">=5.4.0.0"
-            },
-            "replace": {
-                "pear-pear/console_getopt": "== 1.4.0.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "PHP License"
-            ],
-            "description": "This is a PHP implementation of &quot;getopt&quot; supporting both\nshort and long options."
-        },
-        {
-            "name": "pear-pear.php.net/HTTP_Request2",
-            "version": "2.2.1",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/HTTP_Request2-2.2.1.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "pear-pear.php.net/net_url2": ">=2.0.0.0",
-                "pear-pear.php.net/pear": ">=1.9.2.0",
-                "php": ">=5.2.0.0"
-            },
-            "replace": {
-                "pear-pear/http_request2": "== 2.2.1.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "BSD License"
-            ],
-            "description": "PHP5 rewrite of HTTP_Request package (with parts of HTTP_Client). Provides\ncleaner API and pluggable Adapters:\n  * Socket adapter, based on old HTTP_Request code,\n  * Curl adapter, wraps around PHP's cURL extension,\n  * Mock adapter, to use for testing packages dependent on HTTP_Request2.\nSupports POST requests with data and file uploads, basic and digest\nauthentication, cookies, managing cookies across requests, proxies, gzip and\ndeflate encodings, redirects, monitoring the request progress with Observers..."
-        },
-        {
-            "name": "pear-pear.php.net/Mail_Mime",
-            "version": "1.8.9",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/Mail_Mime-1.8.9.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">=4.3.0.0"
-            },
-            "replace": {
-                "pear-pear/mail_mime": "== 1.8.9.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "BSD Style"
-            ],
-            "description": "Mail_Mime provides classes to deal with the creation and manipulation of MIME messages.\nIt allows people to create e-mail messages consisting of:\n* Text Parts\n* HTML Parts\n* Inline HTML Images\n* Attachments\n* Attached messages\n\nIt supports big messages, base64 and quoted-printable encodings and\nnon-ASCII characters in filenames, subjects, recipients, etc. encoded\nusing RFC2047 and/or RFC2231."
-        },
-        {
-            "name": "pear-pear.php.net/Mail_mimeDecode",
-            "version": "1.5.5",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/Mail_mimeDecode-1.5.5.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "pear-pear.php.net/mail_mime": ">1.4.0.0",
-                "php": ">=4.3.0.0"
-            },
-            "replace": {
-                "pear-pear/mail_mimedecode": "== 1.5.5.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "BSD Style"
-            ],
-            "description": "Provides a class to deal with the decoding and interpreting of mime messages.\n This package used to be part of the Mail_Mime package, but has been split off."
-        },
-        {
-            "name": "pear-pear.php.net/Net_URL2",
-            "version": "2.2.0",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/Net_URL2-2.2.0.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">=5.1.4.0"
-            },
-            "replace": {
-                "pear-pear/net_url2": "== 2.2.0.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Provides parsing of URLs into their constituent parts (scheme, host, path etc.), URL generation, and resolving of\n    relative URLs."
-        },
-        {
-            "name": "pear-pear.php.net/PEAR",
-            "version": "1.9.5",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/PEAR-1.9.5.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "ext-pcre": "*",
-                "ext-xml": "*",
-                "pear-pear.php.net/archive_tar": ">=1.3.11.0",
-                "pear-pear.php.net/console_getopt": ">=1.2.0.0",
-                "pear-pear.php.net/structures_graph": ">=1.0.2.0",
-                "pear-pear.php.net/xml_util": ">=1.2.0.0",
-                "php": ">=4.4.0.0,!=5.0.0.0,!=5.1.0.0,!=5.1.1.0,!=5.1.2.0,!=5.1.3.0,!=5.1.4.0,!=5.1.5.0"
-            },
-            "conflict": {
-                "pear-pear.php.net/pear_frontend_gtk": "<0.4.0.0",
-                "pear-pear.php.net/pear_frontend_web": "<=0.4.0.0"
-            },
-            "replace": {
-                "pear-pear/pear": "== 1.9.5.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "New BSD License"
-            ],
-            "description": "The PEAR package contains:\n * the PEAR installer, for creating, distributing\n   and installing packages\n * the PEAR_Exception PHP5 error handling mechanism\n * the PEAR_ErrorStack advanced error handling mechanism\n * the PEAR_Error error handling mechanism\n * the OS_Guess class for retrieving info about the OS\n   where PHP is running on\n * the System class for quick handling of common operations\n   with files and directories\n * the PEAR base class\n  Features in a nutshell:\n  * full support for channels\n  * pre-download dependency validation\n  * new package.xml 2.0 format allows tremendous flexibility while maintaining BC\n  * support for optional dependency groups and limited support for sub-packaging\n  * robust dependency support\n  * full dependency validation on uninstall\n  * remote install for hosts with only ftp access - no more problems with\n    restricted host installation\n  * full support for mirroring\n  * support for bundling several packages into a single tarball\n  * support for static dependencies on a url-based package\n  * support for custom file roles and installation tasks"
-        },
-        {
-            "name": "pear-pear.php.net/Structures_Graph",
-            "version": "1.1.0",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/Structures_Graph-1.1.0.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">=5.3.0.0"
-            },
-            "replace": {
-                "pear-pear/structures_graph": "== 1.1.0.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "LGPL License"
-            ],
-            "description": "Structures_Graph is a package for creating and manipulating graph datastructures. It allows building of directed\nand undirected graphs, with data and metadata stored in nodes. The library provides functions for graph traversing\nas well as for characteristic extraction from the graph topology."
-        },
-        {
-            "name": "pear-pear.php.net/XML_Util",
-            "version": "1.3.0",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.php.net/get/XML_Util-1.3.0.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.3.0.0"
-            },
-            "replace": {
-                "pear-pear/xml_util": "== 1.3.0.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "license": [
-                "BSD License"
-            ],
-            "description": "Selection of methods that are often needed when working with XML documents.  Functionality includes creating of attribute lists from arrays, creation of tags, validation of XML names and more."
-        },
-        {
             "name": "phpseclib/phpseclib",
-            "version": "0.3.10",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "d15bba1edcc7c89e09cc74c5d961317a8b947bf4"
+                "reference": "3d265f7c079f5b37d33475f996d7a383c5fc8aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d15bba1edcc7c89e09cc74c5d961317a8b947bf4",
-                "reference": "d15bba1edcc7c89e09cc74c5d961317a8b947bf4",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/3d265f7c079f5b37d33475f996d7a383c5fc8aeb",
+                "reference": "3d265f7c079f5b37d33475f996d7a383c5fc8aeb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.0.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "phing/phing": "~2.7",
                 "phpunit/phpunit": "~4.0",
                 "sami/sami": "~2.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "squizlabs/php_codesniffer": "~2.0"
             },
             "suggest": {
                 "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
-                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a wide variety of cryptographic operations.",
-                "pear-pear/PHP_Compat": "Install PHP_Compat to get phpseclib working on PHP < 4.3.3."
+                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
+            "autoload": {
+                "files": [
+                    "phpseclib/bootstrap.php"
+                ],
+                "psr-4": {
+                    "phpseclib\\": "phpseclib/"
                 }
             },
-            "autoload": {
-                "psr-0": {
-                    "Crypt": "phpseclib/",
-                    "File": "phpseclib/",
-                    "Math": "phpseclib/",
-                    "Net": "phpseclib/",
-                    "System": "phpseclib/"
-                },
-                "files": [
-                    "phpseclib/Crypt/Random.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "phpseclib/"
-            ],
             "license": [
                 "MIT"
             ],
@@ -1694,6 +1581,11 @@
                 {
                     "name": "Hans-Jürgen Petrich",
                     "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
                     "role": "Developer"
                 }
             ],
@@ -1718,7 +1610,102 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2015-01-28 21:50:33"
+            "time": "2016-05-13 01:15:21"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "9e66031f41fbbdda45ee11e93c45d480ccba3eb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/9e66031f41fbbdda45ee11e93c45d480ccba3eb3",
+                "reference": "9e66031f41fbbdda45ee11e93c45d480ccba3eb3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2015-12-11 02:52:07"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
         },
         {
             "name": "psr/log",
@@ -1760,16 +1747,16 @@
         },
         {
             "name": "rackspace/php-opencloud",
-            "version": "v1.14.1",
+            "version": "v1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rackspace/php-opencloud.git",
-                "reference": "46c672e3b2fc9cea545f6647290609ceddfd8fe3"
+                "reference": "d6b71feed7f9e7a4b52e0240a79f06473ba69c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rackspace/php-opencloud/zipball/46c672e3b2fc9cea545f6647290609ceddfd8fe3",
-                "reference": "46c672e3b2fc9cea545f6647290609ceddfd8fe3",
+                "url": "https://api.github.com/repos/rackspace/php-opencloud/zipball/d6b71feed7f9e7a4b52e0240a79f06473ba69c8c",
+                "reference": "d6b71feed7f9e7a4b52e0240a79f06473ba69c8c",
                 "shasum": ""
             },
             "require": {
@@ -1782,6 +1769,7 @@
                 "apigen/apigen": "~4.0",
                 "fabpot/php-cs-fixer": "1.0.*@dev",
                 "jakub-onderka/php-parallel-lint": "0.*",
+                "phpspec/prophecy": "~1.4",
                 "phpunit/phpunit": "4.3.*",
                 "satooshi/php-coveralls": "0.6.*@dev"
             },
@@ -1789,8 +1777,7 @@
             "autoload": {
                 "psr-0": {
                     "OpenCloud": [
-                        "lib/",
-                        "tests/"
+                        "lib/"
                     ]
                 }
             },
@@ -1800,18 +1787,9 @@
             ],
             "authors": [
                 {
-                    "name": "Glen Campbell",
-                    "email": "glen.campbell@rackspace.com"
-                },
-                {
                     "name": "Jamie Hannaford",
                     "email": "jamie.hannaford@rackspace.com",
                     "homepage": "https://github.com/jamiehannaford"
-                },
-                {
-                    "name": "Shaunak Kashyap",
-                    "email": "shaunak.kashyap@rackspace.com",
-                    "homepage": "https://github.com/ycombinator"
                 }
             ],
             "description": "PHP SDK for Rackspace/OpenStack APIs",
@@ -1822,20 +1800,20 @@
                 "rackspace",
                 "swift"
             ],
-            "time": "2015-05-07 11:48:54"
+            "time": "2016-01-29 10:34:57"
         },
         {
             "name": "sabre/dav",
-            "version": "2.1.3",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruux/sabre-dav.git",
-                "reference": "6a8aec204688d36681e0185fbaf1974b97e4a070"
+                "reference": "5b9737cc2f0182e368d14c80df7f6b2d77dc1457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-dav/zipball/6a8aec204688d36681e0185fbaf1974b97e4a070",
-                "reference": "6a8aec204688d36681e0185fbaf1974b97e4a070",
+                "url": "https://api.github.com/repos/fruux/sabre-dav/zipball/5b9737cc2f0182e368d14c80df7f6b2d77dc1457",
+                "reference": "5b9737cc2f0182e368d14c80df7f6b2d77dc1457",
                 "shasum": ""
             },
             "require": {
@@ -1843,20 +1821,24 @@
                 "ext-date": "*",
                 "ext-dom": "*",
                 "ext-iconv": "*",
-                "ext-libxml": "*",
                 "ext-mbstring": "*",
                 "ext-pcre": "*",
                 "ext-simplexml": "*",
                 "ext-spl": "*",
-                "php": ">=5.4.1",
-                "sabre/event": "~2.0.0",
-                "sabre/http": "~3.0.0",
-                "sabre/vobject": "~3.3"
+                "lib-libxml": ">=2.7.0",
+                "php": ">=5.5.0",
+                "psr/log": "^1.0",
+                "sabre/event": ">=2.0.0, <4.0.0",
+                "sabre/http": "^4.2.1",
+                "sabre/uri": "^1.0.1",
+                "sabre/vobject": "^4.1.0",
+                "sabre/xml": "^1.4.0"
             },
             "require-dev": {
                 "evert/phpdoc-md": "~0.1.0",
-                "phpunit/phpunit": "~4.2",
-                "squizlabs/php_codesniffer": "~1.5.3"
+                "monolog/monolog": "^1.18",
+                "phpunit/phpunit": "> 4.8, <=6.0.0",
+                "sabre/cs": "~0.0.5"
             },
             "suggest": {
                 "ext-curl": "*",
@@ -1867,6 +1849,11 @@
                 "bin/naturalselection"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Sabre\\DAV\\": "lib/DAV/",
@@ -1896,30 +1883,39 @@
                 "framework",
                 "iCalendar"
             ],
-            "time": "2015-02-25 18:13:20"
+            "time": "2016-06-28 02:44:05"
         },
         {
             "name": "sabre/event",
-            "version": "2.0.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruux/sabre-event.git",
-                "reference": "f33d60742d7dff63d3722d0f70016704bf32e8db"
+                "reference": "831d586f5a442dceacdcf5e9c4c36a4db99a3534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-event/zipball/f33d60742d7dff63d3722d0f70016704bf32e8db",
-                "reference": "f33d60742d7dff63d3722d0f70016704bf32e8db",
+                "url": "https://api.github.com/repos/fruux/sabre-event/zipball/831d586f5a442dceacdcf5e9c4c36a4db99a3534",
+                "reference": "831d586f5a442dceacdcf5e9c4c36a4db99a3534",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.1"
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "sabre/cs": "~0.0.4"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Sabre\\Event\\": "lib/"
-                }
+                },
+                "files": [
+                    "lib/coroutine.php",
+                    "lib/Loop/functions.php",
+                    "lib/Promise/functions.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1937,42 +1933,47 @@
             "homepage": "http://sabre.io/event/",
             "keywords": [
                 "EventEmitter",
+                "async",
                 "events",
                 "hooks",
                 "plugin",
                 "promise",
                 "signal"
             ],
-            "time": "2014-10-06 23:26:48"
+            "time": "2015-11-05 20:14:39"
         },
         {
             "name": "sabre/http",
-            "version": "3.0.5",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruux/sabre-http.git",
-                "reference": "6b06c03376219b3d608e1f878514ec105ed1b577"
+                "reference": "2e93bc8321524c67be4ca5b8415daebd4c8bf85e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-http/zipball/6b06c03376219b3d608e1f878514ec105ed1b577",
-                "reference": "6b06c03376219b3d608e1f878514ec105ed1b577",
+                "url": "https://api.github.com/repos/fruux/sabre-http/zipball/2e93bc8321524c67be4ca5b8415daebd4c8bf85e",
+                "reference": "2e93bc8321524c67be4ca5b8415daebd4c8bf85e",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=5.4",
-                "sabre/event": ">=1.0.0,<3.0.0"
+                "sabre/event": ">=1.0.0,<4.0.0",
+                "sabre/uri": "~1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.3",
-                "squizlabs/php_codesniffer": "~1.5.3"
+                "sabre/cs": "~0.0.1"
             },
             "suggest": {
                 "ext-curl": " to make http requests with the Client class"
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "lib/functions.php"
+                ],
                 "psr-4": {
                     "Sabre\\HTTP\\": "lib/"
                 }
@@ -1994,29 +1995,84 @@
             "keywords": [
                 "http"
             ],
-            "time": "2015-05-11 15:25:57"
+            "time": "2016-01-06 23:00:08"
         },
         {
-            "name": "sabre/vobject",
-            "version": "3.4.2",
+            "name": "sabre/uri",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-vobject.git",
-                "reference": "0c90f60dae40137f1903c7b5915d3691c4fc99b0"
+                "url": "https://github.com/fruux/sabre-uri.git",
+                "reference": "9012116434d84ef6e5e37a89dfdbfbe2204a8704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-vobject/zipball/0c90f60dae40137f1903c7b5915d3691c4fc99b0",
-                "reference": "0c90f60dae40137f1903c7b5915d3691c4fc99b0",
+                "url": "https://api.github.com/repos/fruux/sabre-uri/zipball/9012116434d84ef6e5e37a89dfdbfbe2204a8704",
+                "reference": "9012116434d84ef6e5e37a89dfdbfbe2204a8704",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "sabre/cs": "~0.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/functions.php"
+                ],
+                "psr-4": {
+                    "Sabre\\Uri\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Evert Pot",
+                    "email": "me@evertpot.com",
+                    "homepage": "http://evertpot.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Functions for making sense out of URIs.",
+            "homepage": "http://sabre.io/uri/",
+            "keywords": [
+                "rfc3986",
+                "uri",
+                "url"
+            ],
+            "time": "2016-03-08 02:29:27"
+        },
+        {
+            "name": "sabre/vobject",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruux/sabre-vobject.git",
+                "reference": "8899c0e856b3178b17f4e9a4e85010209f32a2fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruux/sabre-vobject/zipball/8899c0e856b3178b17f4e9a4e85010209f32a2fa",
+                "reference": "8899c0e856b3178b17f4e9a4e85010209f32a2fa",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.3.1"
+                "php": ">=5.5",
+                "sabre/xml": "~1.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "*",
-                "squizlabs/php_codesniffer": "*"
+                "sabre/cs": "~0.0.3"
+            },
+            "suggest": {
+                "hoa/bench": "If you would like to run the benchmark scripts"
             },
             "bin": [
                 "bin/vobject",
@@ -2025,7 +2081,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -2049,44 +2105,130 @@
                     "email": "dominik@fruux.com",
                     "homepage": "http://tobschall.de/",
                     "role": "Developer"
+                },
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net",
+                    "homepage": "http://mnt.io/",
+                    "role": "Developer"
                 }
             ],
             "description": "The VObject library for PHP allows you to easily parse and manipulate iCalendar and vCard objects",
             "homepage": "http://sabre.io/vobject/",
             "keywords": [
-                "VObject",
+                "availability",
+                "freebusy",
                 "iCalendar",
+                "ics",
                 "jCal",
                 "jCard",
-                "vCard"
+                "recurrence",
+                "rfc2425",
+                "rfc2426",
+                "rfc2739",
+                "rfc4770",
+                "rfc5545",
+                "rfc5546",
+                "rfc6321",
+                "rfc6350",
+                "rfc6351",
+                "rfc6474",
+                "rfc6638",
+                "rfc6715",
+                "rfc6868",
+                "vCard",
+                "vcf",
+                "xCal",
+                "xCard"
             ],
-            "time": "2015-02-25 17:47:50"
+            "time": "2016-04-07 00:48:27"
         },
         {
-            "name": "symfony/event-dispatcher",
-            "version": "v2.6.7",
-            "target-dir": "Symfony/Component/EventDispatcher",
+            "name": "sabre/xml",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02"
+                "url": "https://github.com/fruux/sabre-xml.git",
+                "reference": "f48d98c22a4a4bef76cabb5968ffaddbb2bb593e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/672593bc4b0043a0acf91903bb75a1c82d8f2e02",
-                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02",
+                "url": "https://api.github.com/repos/fruux/sabre-xml/zipball/f48d98c22a4a4bef76cabb5968ffaddbb2bb593e",
+                "reference": "f48d98c22a4a4bef76cabb5968ffaddbb2bb593e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "ext-dom": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "lib-libxml": ">=2.6.20",
+                "php": ">=5.4.1",
+                "sabre/uri": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "sabre/cs": "~0.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sabre\\Xml\\": "lib/"
+                },
+                "files": [
+                    "lib/Deserializer/functions.php",
+                    "lib/Serializer/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Evert Pot",
+                    "email": "me@evertpot.com",
+                    "homepage": "http://evertpot.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Staab",
+                    "email": "markus.staab@redaxo.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "sabre/xml is an XML library that you may not hate.",
+            "homepage": "https://sabre.io/xml/",
+            "keywords": [
+                "XMLReader",
+                "XMLWriter",
+                "dom",
+                "xml"
+            ],
+            "time": "2016-05-19 21:56:49"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.8.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "b180b70439dca70049b6b9b7e21d75e6e5d7aca9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b180b70439dca70049b6b9b7e21d75e6e5d7aca9",
+                "reference": "b180b70439dca70049b6b9b7e21d75e6e5d7aca9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.0,>=2.0.5",
-                "symfony/dependency-injection": "~2.6",
-                "symfony/expression-language": "~2.6",
-                "symfony/phpunit-bridge": "~2.7",
-                "symfony/stopwatch": "~2.3"
+                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+                "symfony/dependency-injection": "~2.6|~3.0.0",
+                "symfony/expression-language": "~2.6|~3.0.0",
+                "symfony/stopwatch": "~2.3|~3.0.0"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -2095,13 +2237,16 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\EventDispatcher\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2119,7 +2264,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-02 15:18:45"
+            "time": "2016-06-29 05:29:29"
         }
     ],
     "aliases": [],
