@@ -63,6 +63,7 @@ abstract class Filesystem extends Component
      */
     public $config;
     /**
+     * Name of caching component
      * @var string|null
      */
     public $cache;
@@ -75,9 +76,15 @@ abstract class Filesystem extends Component
      */
     public $cacheDuration = 3600;
     /**
+     * Name of another filesystem component
      * @var string|null
      */
     public $replica;
+    /**
+     * List of plugin class names applied to filesystem.
+     * @var array
+     */
+    public $pluginArray = [];
     /**
      * @var \League\Flysystem\FilesystemInterface
      */
@@ -88,8 +95,10 @@ abstract class Filesystem extends Component
      */
     public function init()
     {
+        // original adapter
         $adapter = $this->prepareAdapter();
 
+        // caching config
         if ($this->cache !== null) {
             /* @var Cache $cache */
             $cache = Yii::$app->get($this->cache);
@@ -101,6 +110,7 @@ abstract class Filesystem extends Component
             $adapter = new CachedAdapter($adapter, new YiiCache($cache, $this->cacheKey, $this->cacheDuration));
         }
 
+        // replica config
         if ($this->replica !== null) {
             /* @var Filesystem $filesystem */
             $filesystem = Yii::$app->get($this->replica);
@@ -110,6 +120,11 @@ abstract class Filesystem extends Component
             }
 
             $adapter = new ReplicateAdapter($adapter, $filesystem->getAdapter());
+        }
+
+        // plugins
+        foreach ($this->pluginArray as $pluginClass) {
+            $this->filesystem->addPlugin(new $pluginClass);
         }
 
         $this->filesystem = new NativeFilesystem($adapter, $this->config);
