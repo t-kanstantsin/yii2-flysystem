@@ -471,6 +471,25 @@ return [
 ];
 ```
 
+### Plugin usage
+
+Configure any application component as follows
+
+```php
+return [
+    //...
+    'components' => [
+        //...
+        'fs' => [
+            //... other config settings of compnent
+            'pluginArray' => [
+                // list of plugin classes, e.g.
+            ],
+        ],
+    ],
+];
+```
+
 ## Usage
 
 ### Writing files
