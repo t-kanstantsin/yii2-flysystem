@@ -92,13 +92,13 @@ return [
 Either run
 
 ```bash
-$ composer require league/flysystem-aws-s3-v2
+$ composer require league/flysystem-aws-s3-v3
 ```
 
 or add
 
 ```
-"league/flysystem-aws-s3-v2": "~1.0"
+"league/flysystem-aws-s3-v3": "~1.0"
 ```
 
 to the `require` section of your `composer.json` file and configure application `components` as follows
@@ -113,10 +113,12 @@ return [
             'key' => 'your-key',
             'secret' => 'your-secret',
             'bucket' => 'your-bucket',
-            // 'region' => 'your-region',
+            'region' => 'your-region',
+            // 'version' => 'latest',
             // 'baseUrl' => 'your-base-url',
             // 'prefix' => 'your-prefix',
             // 'options' => [],
+            // 'endpoint' => 'http://my-custom-url'
         ],
     ],
 ];
@@ -225,6 +227,33 @@ return [
     ],
 ];
 ```
+
+## Google Cloud filesystem
+
+Run
+
+```bash
+$ composer require "superbalist/flysystem-google-storage": "^5.0"
+```
+
+and configure application `components` as follows
+
+```php
+return [
+    //...
+    'components' => [
+        //...
+        'googleCloudFs' => [
+            'class' => 'creocoder\flysystem\GoogleCloudFilesystem',
+            'projectId' => 'GOOGLE_PROJECT_ID',
+            'bucket' => 'GOOGLE_BUCKET',
+            'keyFilePath' => 'GOOGLE_KEY_FILE_PATH',
+        ],
+    ],
+];
+```
+
+> Note: Credential configuration is read from the *keyFile*.
 
 ### GridFS filesystem
 

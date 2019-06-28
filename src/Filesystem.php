@@ -51,8 +51,6 @@ use yii\caching\Cache;
  * @method boolean updateStream(string $path, resource $resource, array $config = [])
  * @method boolean write(string $path, string $contents, array $config = [])
  * @method boolean writeStream(string $path, resource $resource, array $config = [])
- * 
- * @property NativeFilesystem $filesystem
  *
  * @author Alexander Kochetov <creocoder@gmail.com>
  */
@@ -63,7 +61,6 @@ abstract class Filesystem extends Component
      */
     public $config;
     /**
-     * Name of caching component
      * @var string|null
      */
     public $cache;
@@ -76,7 +73,6 @@ abstract class Filesystem extends Component
      */
     public $cacheDuration = 3600;
     /**
-     * Name of another filesystem component
      * @var string|null
      */
     public $replica;
@@ -144,7 +140,7 @@ abstract class Filesystem extends Component
     {
         return call_user_func_array([$this->filesystem, $method], $parameters);
     }
-    
+
     /**
      * @return \League\Flysystem\FilesystemInterface
      */
